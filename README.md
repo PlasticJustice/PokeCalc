@@ -1,24 +1,25 @@
 # PokeCalc
 Pokémon Calculators
 
-## Calculators - So Far
-### Feebas Tile Finder - Status: Incomplete
+## Calculators - _So Far_
+
+### Feebas Tile Finder - _Status: Incomplete_
 Calculates Feebas Tiles
 
-Status:
+**Status:**
  - Gen 4 only
  - Requires user to input Feebas Seed
  
-Plans:
+**Plans:**
  - Add save support
  - Gen 3
  
-### Cute Charm ID Genie - Status: Incomplete
+### Cute Charm ID Genie - _Status: Incomplete_
 Calculates IDs for Cute Charm Glitch. A web version of https://github.com/PlasticJustice/CuteCharmIDGenie
 
-Status:
+**Status:**
  - Most of the inputs fields
  - Doesn't do anything yet
  
-Plans:
+**Plans:**
  - Make it do stuff
