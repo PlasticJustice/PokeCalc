@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Cute Charm ID Genie</title>
+<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link type="text/css" href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen" />
+<link type="text/css" href="css/overrides.css" rel="stylesheet" media="screen" />
+<script type="text/javascript">
+	window.dada = {};
+	window.dada.i18n = {"response_error":"Error"}
+</script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jcanvas.min.js"></script>
+<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
+</head>
+
+<body bgcolor="#00D0FF">
+<div class="row container-fluid">
+	<div class="form-group top-col">
+		<a href="index.html">  <-- Back</a>
+	</div>
+	<div class="form-group col-xs-4 col-xs-offset-4">
+		<center><h2><u><strong>Cute Charm ID Genie</strong></u></h2></center>
+	</div>
+</div>
+<br>
+<center>
+<div class="row container-fluid" id="game">
+	<div class="form-group top-col col-xs-2 col-xs-offset-5">
+		<label class="control-label" for="input_method">Game: </label>
+		<select name="Options" class="dropdown-default" id="input_method">
+			<option value="Save">--- Select ---</option>
+			<option value="Seed">Diamond/Pearl</option>
+			<option value="Data">Platinum</option>
+			<option value="Data">HeartGold/SoulSilver</option>
+		</select>
+	</div>
+	<div class="form-group top-col col-xs-offset-3 col-xs-6 col-button">
+		<label class="control-label calculate-label" for="calculate_ID">&nbsp;</label>
+		<button type="submit" class="btn btn-block btn-default" id="calculate_ID">Calculate</button>
+	</div>
+</div>
+<br><br>
+<div class="row container-fluid" id="result">
+	<div class="form-group top-col col-xs-2 col-xs-offset-3">
+		<label class="control-label calculate-label" for="res_TID">TID: </label>
+		<span class="result" id="res_TID">-</span>
+	</div>
+	<div class="form-group col-xs-2 col-xs-offset-1">
+		<label class="control-label calculate-label" for="res_SID">SID: </label>
+		<span class="result" id="res_SID">-</span>
+	</div>
+</div><br>
+
+<label class="control-label calculate-label" for="ARcode">Action Replay Code:</label><br>
+<pre id="ARcode" class="col-xs-2 col-xs-offset-5">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</pre>
+
+</center>
+</body>
+
+</html>

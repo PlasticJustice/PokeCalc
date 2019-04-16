@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Feebas Calculator</title>
+<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link type="text/css" href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen" />
+<link type="text/css" href="css/overrides.css" rel="stylesheet" media="screen" />
+<script type="text/javascript">
+	window.dada = {};
+	window.dada.i18n = {"response_error":"Error"}
+</script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jcanvas.min.js"></script>
+<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
+</head>
+
+<body bgcolor="#00D0FF">
+
+<div class="row container-fluid">
+	<div class="form-group top-col">
+		<a href="index.html">  <-- Back</a>
+	</div>
+	<div class="form-group col-xs-4 col-xs-offset-4">
+		<center><h2><u><strong>Feebas Tile Finder</strong></u></h2></center>
+	</div>
+	<div class="form-group col-xs-2 col-xs-offset-2">
+		<label class="control-label" for="input_method">Input Method:</label><br>
+		<select name="Options" class="dropdown-default" id="input_method">
+			<option value="Save">Save</option>
+			<option value="Seed">Seed</option>
+			<!--<option value="Data">Data</option>-->
+		</select>
+	</div>
+</div>
+<br>
+<div class="row container-fluid" id="gen">
+	<div class="form-group col-xs-offset-2 top-col col-xs-3 col-sm-0">
+		<label class="control-label"><h3><u>Gen III:</u></h3></label>
+	</div>
+	<div class="form-group col-xs-offset-3 col-xs-3 col-sm-2">
+		<label class="control-label"><h3><u>Gen IV:</u></h3></label>
+	</div>
+</div>
+<br>
+<div class="row container-fluid" id="group_seed">
+	<div class="form-group col-xs-2 top-col col-xs-offset-2">
+		Not available yet
+	</div>
+	<div class="form-group col-xs-3 col-sm-2 col-xs-offset-0 col-sm-offset-7"><!--" top-col"-->
+		<label class="control-label" for="input_seed">Feebas Seed:</label><br>
+		<input type="file" class="form-control input-sm" id="input_seed" value="fileupload" placeholder="No File" accept=".sav">
+	</div>
+	<div class="form-group col-xs-1 col-xs-offset-0 col-sm-offset-0 col-sm-0 col-button">
+		<label class="control-label calculate-label" for="calculate_tiles">&nbsp;</label>
+		<button type="submit" class="btn btn-block btn-default" id="calculate_tiles">Calculate</button>
+	</div>
+	<div class="form-group col-xs-2 col-sm-0 col-result">
+		<label class="control-label" for="result_seed">Feebas Tiles:</label><br>
+		<span class="result" id="result_seed">-</span>
+	</div>
+	<br><br>
+	<div  class="form-group col-sm-offset-7">
+		<canvas id="myCanvas" width="425" height="386"></canvas>
+	</div>
+</div>
+
+</body>
+
+</html>
